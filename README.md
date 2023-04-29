@@ -1,5 +1,5 @@
 # Recommendation_System
-1.	Problem Selection
+## 1.	Problem Selection
 
 ●	Recommender systems have become a game-changer in the way we search for things that match our interests. These systems utilize information filtering methods to predict the preferences of a user and are widely applied in various domains such as books, news, articles, music, videos, and movies.
 
@@ -7,17 +7,7 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-2.	Data Collection & Description
+## 2.	Data Collection & Description
 
 
 
@@ -27,7 +17,7 @@ Keywords.csv - Contains 46,418 rows & 2 columns with keyword information.
 Ratings_small.csv – Contains 29,965 rows and 4 columns of Ratings of users given to the movies.
 Credits.csv – Contains 45,476 rows and 3 columns of Cast of movies in movie_data.csv.
 
-3.	Data Cleaning & Feature Extraction
+## 3.	Data Cleaning & Feature Extraction
 
 •	Filtering movies that have vote count > 50 from movie_md dataset.
 movie_md = movie_md[movie_md['vote_count']>=50]
@@ -49,7 +39,7 @@ The fit_transform function converts the data to sparse matrix of TF-IDF features
 
 We planned to Use dimensionality reduction techniques that can better work on Uncentered Data and Can capture Nonlinear relations within the data without the requirement of any Data Transformation techniques to be applied before.
 
-4.	Dimensionality Reduction
+## 4.	Dimensionality Reduction
 
 Since the TF-IDF converted matrix consists of a lot many columns we perform Dimensionality Reduction using TruncatedSVD algorithm.
 
@@ -65,7 +55,7 @@ TruncatedSVD:
 
 
 
-5.	Types of Recommendation Systems
+## 5.	Types of Recommendation Systems
  
 1.	Content Based Recommender Systems:
 Content based systems provide recommendations based on their own user preference and past behavior. Content based systems use the feature items of their own to make decisions.
@@ -83,7 +73,7 @@ User-Based Collaborative Filtering: This method identifies similar users based o
 
 Item-Based Collaborative Filtering: Item based collaborative filtering finds similarity between items that user has interacted with. For example, if a user has rated a particular movie highly, the system might recommend other movies that are similar in terms of genre, director, or cast.
 
-6.	 Types of Similarity Measures
+## 6.	 Types of Similarity Measures
 There are different types of Similarity measures to calculate the distance between different users or items.
 
 1.	Cosine Similarity: This measure calculates the cosine of angle between two vectors. It is frequently used in text-based recommendation systems to calculate similarity between documents based on frequency of words that they share.
@@ -97,7 +87,7 @@ There are different types of Similarity measures to calculate the distance betwe
 
 
 
-7.	Project Results
+## 7.	Project Results
 Content Based Filtering
 In Content Based Recommender Systems we recommended movies to a user based on similarity value of the movies he/she watched. The movies are grouped together based on the different features extracted like the keywords, overview, cast, title. 
 
@@ -122,7 +112,7 @@ We Observe that Prediction of Rating based on the similar Users rating is almost
 
 
 
-                      8. Impact of the Project
+## 8. Impact of the Project
 The following are the Impact that Recommendation Projects Can have.
 
 1.	Increased Revenue: Through these techniques of recommendations the movie companies can increase their revenue by allowing users to watch more similar content.
